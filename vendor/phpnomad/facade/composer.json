@@ -1,0 +1,56 @@
+{
+    "name": "phpnomad/facade",
+    "description": "",
+    "type": "library",
+    "homepage": "https://github.com/phpnomad/core",
+    "readme": "README.md",
+    "license": "MIT",
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix"
+    },
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/logger.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/singleton.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/di.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPNomad\\Facade\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPNomad\\Facade\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Standiford",
+            "email": "alex@standiford.us"
+        }
+    ],
+    "require-dev": {
+        "phpnomad/tests": "^0.1.0",
+        "phpnomad/di": "dev-main",
+        "phpnomad/logger": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "name": "phpnomad/rest",
+    "description": "",
+    "type": "library",
+    "homepage": "https://github.com/phpnomad/core",
+    "readme": "README.md",
+    "license": "MIT",
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/auth.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/cache.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/enum-polyfill.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPNomad\\Rest\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPNomad\\Rest\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Standiford",
+            "email": "alex@standiford.us"
+        }
+    ],
+    "require": {
+        "phpnomad/enum-polyfill": "dev-main",
+        "phpnomad/auth": "dev-main",
+        "phpnomad/cache": "dev-main",
+        "phpnomad/event": "dev-main"
+    },
+    "require-dev": {
+        "phpnomad/tests": "^0.1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "name": "phpnomad/framework",
+    "description": "",
+    "type": "library",
+    "homepage": "https://github.com/phpnomad/core",
+    "readme": "README.md",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/di.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/db.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/loader.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/rest.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/utils.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/config.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/wordpress-integration.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/utils.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/event.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/logger.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/singleton.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/facade.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/siren-basic-loader.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/siren-collaborator-core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/cache.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:phpnomad/siren-wordpress-core.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPNomad\\Framework\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPNomad\\Framework\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Standiford",
+            "email": "alex@standiford.us"
+        }
+    ],
+    "require": {
+        "phpnomad/db": "dev-main",
+        "phpnomad/di": "dev-main",
+        "phpnomad/event": "dev-main",
+        "phpnomad/rest": "dev-main",
+        "phpnomad/logger": "dev-main"
+    },
+    "require-dev": {
+        "phpnomad/tests": "^0.1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "name": "phpnomad/enum-polyfill",
+    "description": "",
+    "type": "library",
+    "homepage": "https://github.com/phpnomad/core",
+    "readme": "README.md",
+    "license": "MIT",
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/cache.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/singleton.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPNomad\\Enum\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPNomad\\Enum\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Standiford",
+            "email": "alex@standiford.us"
+        }
+    ],
+    "require-dev": {
+        "phpnomad/tests": "^0.1.0"
+    },
+    "require": {
+        "phpnomad/singleton": "dev-main",
+        "phpnomad/cache": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}

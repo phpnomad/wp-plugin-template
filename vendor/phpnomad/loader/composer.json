@@ -1,0 +1,73 @@
+{
+    "name": "phpnomad/loader",
+    "description": "",
+    "type": "library",
+    "homepage": "https://github.com/phpnomad/core",
+    "readme": "README.md",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "scripts": {
+        "php-cs-fixer": "php-cs-fixer fix"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/utils.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/di.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/rest.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/update.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/mutator.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/facade.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPNomad\\Loader\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPNomad\\Loader\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Standiford",
+            "email": "alex@standiford.us"
+        }
+    ],
+    "require-dev": {
+        "phpnomad/tests": "^0.1.0"
+    },
+    "require": {
+        "phpnomad/facade": "dev-main",
+        "phpnomad/utils": "dev-main",
+        "phpnomad/mutator": "dev-main",
+        "phpnomad/update": "dev-main",
+        "phpnomad/di": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
