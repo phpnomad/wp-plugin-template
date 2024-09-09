@@ -1,9 +1,9 @@
 <?php
 /*
- * Plugin Name: Siren Affiliates Migration Helper
- * Description: Assists with migration from AffiliateWP
- * Author: Siren Affiliates
- * Author URI: www.sirenaffiliates.com
+ * Plugin Name: Plugin Template
+ * Description: Plugin template
+ * Author:
+ * Author URI:
  * Version: 1.0.0
  */
 
