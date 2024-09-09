@@ -63,6 +63,7 @@ else
     print_usage
 fi
 
+## Set up action scheduler library. If this plugin doesn't use action scheduler, remove this.
 echo "Installing action scheduler..."
-git subtree add --prefix libraries/action-scheduler subtree-action-scheduler trunk --squash
-
+git submodule add https://github.com/woocommerce/action-scheduler.git libraries/action-scheduler
+git submodule update --init --recursive
