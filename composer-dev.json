@@ -134,8 +134,8 @@
         ]
     },
     "require": {
-        "phpnomad/core": "dev-main",
-        "phpnomad/wordpress-integration": "dev-main"
+        "phpnomad/core": "^1.0",
+        "phpnomad/wordpress-integration": "^1.0"
     },
     "require-dev": {
         "humbug/php-scoper": "^0.18.7"
