@@ -1,5 +1,3 @@
-Here's the revised version with a more generalized tone for the template:
-
 ---
 
 # WordPress Plugin Template Using PHPNomad and PHPScoper
