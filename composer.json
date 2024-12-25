@@ -18,7 +18,7 @@
     },
     "require": {
         "phpnomad/core": "^1.0",
-        "phpnomad/wordpress-integration": "^1.0"
+        "phpnomad/wordpress-integration": "^2.0"
     },
     "require-dev": {
         "humbug/php-scoper": "^0.18.7"
